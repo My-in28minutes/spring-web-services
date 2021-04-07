@@ -264,7 +264,7 @@ public class UserDAOService {
  
  entityManager.persist(jack);
  
- Persistence Context
+ //Persistence Context
  jack.setRole("User"); // Only this will be tracked by persistence context since it is persisted by entityManager
  jill.setRole("User");
  */
