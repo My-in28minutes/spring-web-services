@@ -259,10 +259,14 @@ public class UserDAOService {
 }
 
 /*
- * Spring Data JPA
- * 
- * 
- * 
+ User jack = new User ("Jack", "Admin");
+ User jill = new User ("Jill", "Admin");
+ 
+ entityManager.persist(jack);
+ 
+ Persistence Context
+ jack.setRole("User"); // Only this will be tracked by persistence context since it is persisted by entityManager
+ jill.setRole("User");
  */
 ```
 ---
