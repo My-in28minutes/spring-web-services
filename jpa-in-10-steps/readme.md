@@ -182,11 +182,12 @@ public class User {
 	private String name;
 
 	private String role;
-
+        
+	//JPA expects default constructor 
 	protected User() {
 
 	}
-
+        //Default constructor will be overridden by below constructor. 
 	public User(String name, String role) {
 		super();
 		this.name = name;
